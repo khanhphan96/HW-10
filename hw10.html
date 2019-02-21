@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mars News U Can Use</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+    <h1>Missionn to Mars</h1>
+    <a href="/scrape">Scrape new data</a>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+            <img src="{{https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiUt6Os-svgAhVFmK0KHWrrDS8QjRx6BAgBEAU&url=https%3A%2F%2Fwww.bbc.com%2Fgahuza%2Famakuru-44965117&psig=AOvVaw1bxCIg0qWwrtfVeYca5z24&ust=1550808563236803}}">
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h2>Weather:</h2>
+                            {{ weather }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h2>News u can use:</h2>
+                            <h3>{{ news_title }}</h3>
+                            <p>{{ news_p }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            {{ df_html_output|safe }}
+                        </div>
+                    </div>    
+                </div>
+                    
+            </div>
+        </div>
+    
+    
+
+    
+
+    
+
+</body>
+</html>
+    
+    
+
+
